@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>SchenkerMigration</name>
+	<comment></comment>
+	<projects>
+		<project>Global Runtime Objects</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.axway.ms.projectvalidator.ProjectValidator</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.axway.ms.DML</nature>
+		<nature>com.axway.ms.core.natures.MSProjectNature</nature>
+	</natures>
+</projectDescription>

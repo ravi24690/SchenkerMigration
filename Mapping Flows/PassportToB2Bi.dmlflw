@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flow xmlns="http://www.axway.com/mappingServices/flow" id="594a8ecf-c655-46bf-ab49-7e0b4b9efd12">
+   <signature appVersion="3.1.2" lastUpdatedOn="30/10/2018 12:45:57 +0530"/>
+   <configurationParameters>
+      <configurationParameter name="checkInputFacet" value="true"/>
+      <configurationParameter name="stopOnFirstInputFacetCheckError" value="true"/>
+      <configurationParameter name="checkInputCheckConstraints" value="false"/>
+      <configurationParameter name="stopOnFirstInputCheckConstraintsError" value="true"/>
+      <configurationParameter name="checkOutputFacet" value="false"/>
+      <configurationParameter name="stopOnFirstOutputFacetCheckError" value="true"/>
+      <configurationParameter name="checkOutputCheckConstraints" value="false"/>
+      <configurationParameter name="stopOnFirstOutputCheckConstraintsError" value="true"/>
+      <configurationParameter name="continueMessageProcessingOnError" value="false"/>
+      <configurationParameter name="groupAllResultingInstances" value="false"/>
+      <configurationParameter name="keepExactValue" value="false"/>
+      <configurationParameter name="copyAllAttributes" value="true"/>
+   </configurationParameters>
+   <graphLinks>
+      <graphLink factoryType="FlowMainLink" name="FlowLink1" type="TYPE_OUTPUT" connectedObjectAlias="out" hash="376422ef-75f4-4485-915f-624766a9ae79">
+         <source ref="1d1962b8-9af2-49a5-941e-214c00099b91"/>
+         <target ref="85499f62-f0fd-4510-a80a-c07a9fa5fbba"/>
+      </graphLink>
+      <graphLink name="link2" hash="897af0ef-dfb8-49f7-9113-3c3f894515f4">
+         <source ref="85499f62-f0fd-4510-a80a-c07a9fa5fbba"/>
+         <target ref="95ffa0a9-a36e-49c8-83de-b3e5f14f835c"/>
+      </graphLink>
+      <graphLink name="Link1" hash="ae59d45a-0bb5-4477-bed7-d3b90581c5ba">
+         <source ref="103de802-d5fa-437b-b95f-275c7aae1e98"/>
+         <target ref="088d08f3-2ee6-48de-8bff-d765b6f4d3bc"/>
+      </graphLink>
+      <graphLink name="Link2" hash="eaf5e1fc-94e9-4cb9-b85f-fe0879ab4fc0">
+         <source ref="3496f483-222f-4c76-b50d-cbb8c9bb4bdb"/>
+         <target ref="711a9530-ba59-42a3-a3b1-767f8d28d70d"/>
+      </graphLink>
+      <graphLink name="Link3" hash="c6427675-6356-43e0-ab6e-846ba93cd83b">
+         <source ref="0fa7ca0a-9f37-4836-9f83-3ed66cd92a5a"/>
+         <target ref="a0a19ea9-8831-4b09-a5e8-0d8850528b66"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink2" type="TYPE_INPUT" connectedObjectAlias="in" hash="6c122e34-086e-4acc-8d18-ad3274cd8682">
+         <source ref="a0a19ea9-8831-4b09-a5e8-0d8850528b66"/>
+         <target ref="df895254-8d0b-4f30-93fa-ca8aff9fbe7c"/>
+      </graphLink>
+   </graphLinks>
+   <graphNodes>
+      <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_PassportToB2BiMultiple1" nameDisplayed="true" hash="df895254-8d0b-4f30-93fa-ca8aff9fbe7c">
+         <bounds x="210" height="400" width="245" y="3"/>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionLoop" name="Loop1" nameDisplayed="true" hash="088d08f3-2ee6-48de-8bff-d765b6f4d3bc">
+               <dmlExpression><![CDATA[count( in:\TPM\DocumentExchangeAddress)]]></dmlExpression>
+               <bounds x="3" height="280" width="214" y="80"/>
+               <intructions>
+                  <instruction factoryType="GraphicalInstructionIf" name="If1" nameDisplayed="true" hash="711a9530-ba59-42a3-a3b1-767f8d28d70d">
+                     <dmlExpression><![CDATA[defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where item\id = "Gateway AS2 server" ] or defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where item\id = "Gateway ROSETTANET-HTTP server" ] or defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where item\id = "Gateway OFTP" ]]]></dmlExpression>
+                     <bounds x="3" height="160" width="183" y="80"/>
+                     <intructions>
+                        <instruction factoryType="GraphicalInstructionBlockTrue" name="Then" nameDisplayed="true" hash="8c7192a9-7af8-44ef-b8dd-d2551fe965b2">
+                           <bounds x="3" height="100" width="118" y="20"/>
+                           <intructions>
+                              <instruction factoryType="GraphicalInstructionMap" name="PassportToB2BiMultiple" nameDisplayed="true" mapName="~/Maps/PassportToB2Bi.mdm" hash="1d1962b8-9af2-49a5-941e-214c00099b91">
+                                 <bounds height="40" width="90" y="20"/>
+                              </instruction>
+                           </intructions>
+                        </instruction>
+                     </intructions>
+                  </instruction>
+                  <instruction factoryType="GraphicalInstructionSet" name="Set1" hash="3496f483-222f-4c76-b50d-cbb8c9bb4bdb">
+                     <dmlExpression><![CDATA[%i_Profiles :=%i_Profiles +1]]></dmlExpression>
+                     <bounds x="51" height="40" width="80" y="20"/>
+                  </instruction>
+               </intructions>
+            </instruction>
+            <instruction factoryType="GraphicalInstructionSet" name="Set1" hash="103de802-d5fa-437b-b95f-275c7aae1e98">
+               <dmlExpression><![CDATA[%i_Profiles := 0]]></dmlExpression>
+               <bounds x="67" height="40" width="80" y="20"/>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="InputEntity" name="input1" hash="0fa7ca0a-9f37-4836-9f83-3ed66cd92a5a">
+         <bounds height="40" width="90" y="180"/>
+      </graphNode>
+      <graphNode factoryType="OutputEntity" name="out1" hash="95ffa0a9-a36e-49c8-83de-b3e5f14f835c">
+         <bounds x="575" height="40" width="90" y="211"/>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="InterchangePartnerProfileMultiple" hash="85499f62-f0fd-4510-a80a-c07a9fa5fbba">
+         <bounds x="470" height="40" width="90" y="211"/>
+         <documentName>~/Business Documents/InterchangePartnerProfile.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="PassPortProfile" hash="a0a19ea9-8831-4b09-a5e8-0d8850528b66">
+         <bounds x="105" height="40" width="90" y="180"/>
+         <documentName>~/Business Documents/PassPortProfile.bdoc</documentName>
+      </graphNode>
+   </graphNodes>
+</flow>
