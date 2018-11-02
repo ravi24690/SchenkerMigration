@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="a836c77b-780b-40cf-875e-2ba2dd571678">
+   <signature appVersion="3.1.2" lastUpdatedOn="31/10/2018 15:48:17 +0530"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/Contact.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/ContactList.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="683206148" elementPath="/Interchange/SecondaryIds/">
+         <dmlExpression><![CDATA[for each in:\Information]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1126283" elementPath="/Prolog/XmlVersion/">
+         <dmlExpression><![CDATA["1.0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1001645657" elementPath="/ContactInfo/Contacts/ProtocolID/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\ProtocolID, absent)]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1090642886" elementPath="/ContactInfo/Contacts/ContactName/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\ContactName, absent)]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1804117406" elementPath="/Prolog/XmlEncoding/">
+         <dmlExpression><![CDATA["ISO-8859-1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1003801785" elementPath="/ContactInfo/Contacts/Protocol/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\Protocol, absent)]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-235953506" elementPath="/ContactInfo/Contacts/CompanyName/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\CompanyName, absent)]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-396532252" elementPath="/ContactInfo/Contacts/Email/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\Email, absent)]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1771622467" elementPath="/ContactInfo/Contacts/Role/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\Role, absent)]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1066182486" elementPath="/ContactInfo/Contacts/Name/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( this\Name, absent)]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

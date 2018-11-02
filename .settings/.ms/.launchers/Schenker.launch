@@ -4,7 +4,7 @@
 <booleanAttribute key=".noRepositoryContent" value="false"/>
 <booleanAttribute key=".openOutputCheckbox" value="true"/>
 <booleanAttribute key=".useDebugMode" value="true"/>
-<stringAttribute key="bad_container_name" value="/SchenkerMigration/Business Documents/entity.bdoc"/>
+<stringAttribute key="bad_container_name" value="/SchenkerMigration/Mapping Flows/ContactList.dmlflw"/>
 <booleanAttribute key="checkInputCheckConstraints" value="false"/>
 <booleanAttribute key="checkInputFacet" value="true"/>
 <booleanAttribute key="checkOutputCheckConstraints" value="false"/>
@@ -13,7 +13,7 @@
 <mapEntry key="0#ACCEPT_INPUT_DOCUMENTS_WITH_ERRORS#" value="0"/>
 <mapEntry key="1#ACCEPT_OUTPUT_DOCUMENTS_WITH_ERRORS#" value="0"/>
 </mapAttribute>
-<stringAttribute key="com.axway.ms.dml.simulation.ui.bdocInputFilePath" value="C:\Users\akesharwani\Documents\Project related\Schenker\gwtst\gwtst.xml"/>
+<stringAttribute key="com.axway.ms.dml.simulation.ui.bdocInputFilePath" value="C:\Users\akesharwani\Documents\Project related\Schenker\gwtst\gwtst - Copy.xml"/>
 <mapAttribute key="com.axway.ms.dml.simulation.ui.bdocOutputFilePath">
 <mapEntry key="out1" value="/SchenkerMigration/Testdata/out1"/>
 </mapAttribute>

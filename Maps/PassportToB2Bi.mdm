@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map xmlns="http://www.axway.com/mappingServices/map" id="7594d8bc-68a4-4928-8cc1-e64267507f13">
-   <signature appVersion="3.1.2" lastUpdatedOn="30/10/2018 12:21:44 +0530"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="02/11/2018 12:20:29 +0530"/>
    <outputBusinessDocument businessDocument="~/Business Documents/InterchangePartnerProfile.bdoc" alias="out"/>
    <inputBusinessDocuments>
       <inputBusinessDocument businessDocument="~/Business Documents/PassPortProfile.bdoc" alias="in"/>
@@ -27,14 +27,14 @@
       <mapElement elementHash="-1309110739" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/RosettaNet2.0CollabRules/EncryptSignAlgorithms/encrypt/">
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-1715762183" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/messagingStandard/">
-         <dmlExpression><![CDATA["X12"]]></dmlExpression>
+      <mapElement elementHash="-481641667" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/MessageAttributesTemplate/IsMessageAttributesTemplateEnabledByProtocol/">
+         <dmlExpression><![CDATA[null]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1442250220" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/maxConnections/">
          <dmlExpression><![CDATA["100"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-481641667" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/MessageAttributesTemplate/IsMessageAttributesTemplateEnabledByProtocol/">
-         <dmlExpression><![CDATA[null]]></dmlExpression>
+      <mapElement elementHash="-1715762183" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/messagingStandard/">
+         <dmlExpression><![CDATA["X12"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-55760636" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/isConsumer/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
@@ -43,7 +43,7 @@
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="487297927" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/community/">
-         <dmlExpression><![CDATA["Axway_Windows"]]></dmlExpression>
+         <dmlExpression><![CDATA["Schenker"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1305091218" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/cr/">
          <dmlExpression><![CDATA["http://www.axway.com/Schemas/2009/10/cr"]]></dmlExpression>
@@ -51,11 +51,11 @@
       <mapElement elementHash="1126283" elementPath="/Prolog/XmlVersion/">
          <dmlExpression><![CDATA["1.0"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-1492097209" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/transportId/">
-         <dmlExpression><![CDATA["OftpTransport_2"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="-700262488" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/retries/">
          <dmlExpression><![CDATA["3"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1492097209" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/transportId/">
+         <dmlExpression><![CDATA["OftpTransport_2"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="2132275465" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/Password/">
          <dmlExpression><![CDATA["mkUTyN42WynOf9kG6RA="]]></dmlExpression>
@@ -83,11 +83,11 @@ loop on in:\TPM\DocumentExchangeAddress[%i_Profiles]\ProtocolAttribute[ where it
       <mapElement elementHash="908478391" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/friendlyName/">
          <dmlExpression><![CDATA[in:\TPM\DocumentExchangeAddress[%i_Profiles]\name]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-823048342" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/isSequenced/">
-         <dmlExpression><![CDATA["false"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="1052170594" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/MessageAttributesTemplate/">
          <dmlExpression><![CDATA[null]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-823048342" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/isSequenced/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="509055138" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/OftpProtocol/">
          <dmlExpression><![CDATA[%i_REFLoop := 0;
@@ -130,11 +130,11 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
 %i_REFLoop :=%i_REFLoop +1;
 %i_REFLoop times]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="360545315" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/namespace/">
-         <dmlExpression><![CDATA["trading"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="927608782" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/responseTimeoutSecs/">
          <dmlExpression><![CDATA["300"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="360545315" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/namespace/">
+         <dmlExpression><![CDATA["trading"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-214985017" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/isSequenced/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
@@ -154,11 +154,11 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
       <mapElement elementHash="862285191" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/UseCommunityCollabSettings/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="1520472376" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/Username/">
-         <dmlExpression><![CDATA["cyclone"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="2089092517" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/Oftp_2_0_CollabRules/EncryptSignAlgorithms/EncryptionAlgorithm/">
          <dmlExpression><![CDATA["DES-EDE3-CBC"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1520472376" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/Username/">
+         <dmlExpression><![CDATA["cyclone"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="906471707" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/MessageAttributesTemplate/IsMessageAttributesTemplateEnabledByProtocol/">
          <dmlExpression><![CDATA[null]]></dmlExpression>
@@ -180,11 +180,8 @@ loop on in:\TPM\DocumentExchangeAddress[%i_Profiles]\ProtocolAttribute[ where it
       <mapElement elementHash="71082972" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/RosettaNet2.0CollabRules/EncryptSignAlgorithms/SigningAlgorithm/">
          <dmlExpression><![CDATA["sha-256"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="332633092" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/KeyInfo/X509Data/X509IssuerSerial/X509SerialNumber/">
-         <dmlExpression><![CDATA["1"]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="996163621" elementPath="/InterchangePartnerProfile/cr/">
-         <dmlExpression><![CDATA["http://www.axway.com/Schemas/2009/10/cr"]]></dmlExpression>
+      <mapElement elementHash="2080559284" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/MessageAttributesTemplate/IsMessageAttributesTemplatePrior/">
+         <dmlExpression><![CDATA[null]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1848331084" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/">
          <dmlExpression><![CDATA[%i_REFLoop := 0;
@@ -193,41 +190,44 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
 %i_REFLoop :=%i_REFLoop +1;
 %i_REFLoop times]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="2080559284" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/MessageAttributesTemplate/IsMessageAttributesTemplatePrior/">
-         <dmlExpression><![CDATA[null]]></dmlExpression>
+      <mapElement elementHash="996163621" elementPath="/InterchangePartnerProfile/cr/">
+         <dmlExpression><![CDATA["http://www.axway.com/Schemas/2009/10/cr"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="332633092" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/KeyInfo/X509Data/X509IssuerSerial/X509SerialNumber/">
+         <dmlExpression><![CDATA["1"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1352398930" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/RosettaNet2.0CollabRules/MessageCompression/">
          <dmlExpression><![CDATA["None"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="441765222" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/RemotePort/">
-         <dmlExpression><![CDATA["22"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="527059571" elementPath="/InterchangePartnerProfile/lastModifed/">
          <dmlExpression><![CDATA["1534427692548"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="441765222" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/RemotePort/">
+         <dmlExpression><![CDATA["22"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1529675609" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/transportId/">
          <dmlExpression><![CDATA["HTTPTransport_1"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-403792353" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/endEntity/">
-         <dmlExpression><![CDATA["true"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="1089019039" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/useCustomRetryIntervals/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-403792353" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/endEntity/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1268293789" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/RosettaNetProtocol/businessProtocolId/">
          <dmlExpression><![CDATA["RosettaNet_2_0_4"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-1450390743" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/cloneable/">
-         <dmlExpression><![CDATA["true"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="-2059475646" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/useCustomRetryIntervals/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="666663472" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/connectTimeoutSecs/">
-         <dmlExpression><![CDATA["30"]]></dmlExpression>
+      <mapElement elementHash="-1450390743" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/cloneable/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-575738396" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/responseTimeoutSecs/">
          <dmlExpression><![CDATA["300"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="666663472" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/connectTimeoutSecs/">
+         <dmlExpression><![CDATA["30"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="719428608" elementPath="/InterchangePartnerProfile/peerNetwork/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
@@ -235,26 +235,26 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
       <mapElement elementHash="-2124188459" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/OftpProtocol/TransportRef/transportId/">
          <dmlExpression><![CDATA["OftpTransport_2"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="1273467747" elementPath="/InterchangePartnerProfile/xsi/">
-         <dmlExpression><![CDATA["http://www.w3.org/2001/XMLSchema-instance"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="-938467053" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/connectTimeoutSecs/">
          <dmlExpression><![CDATA["30"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1273467747" elementPath="/InterchangePartnerProfile/xsi/">
+         <dmlExpression><![CDATA["http://www.w3.org/2001/XMLSchema-instance"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="658501982" elementPath="/InterchangePartnerProfile/OrganizationProfile/CommunitySubscription/">
          <dmlExpression><![CDATA[1 times]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="1021553256" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/UseCommunityCollabSettings/">
-         <dmlExpression><![CDATA["false"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="1657596282" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/RosettaNet2.0CollabRules/SignSignals/sign/">
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-465444088" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/KeyInfo/X509Data/X509IssuerSerial/X509IssuerName/">
-         <dmlExpression><![CDATA["C=RO, O=Axway, OU=BU, CN=Cert11"]]></dmlExpression>
+      <mapElement elementHash="1021553256" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/UseCommunityCollabSettings/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1788402395" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/MessageAttributesTemplate/IsMessageAttributesTemplatePrior/">
          <dmlExpression><![CDATA[null]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-465444088" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/KeyInfo/X509Data/X509IssuerSerial/X509IssuerName/">
+         <dmlExpression><![CDATA["C=RO, O=Axway, OU=BU, CN=Cert11"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1136779028" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/readTimeoutSecs/">
          <dmlExpression><![CDATA["30"]]></dmlExpression>
@@ -275,6 +275,9 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
       <mapElement elementHash="-1244167701" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/MessageCompression/">
          <dmlExpression><![CDATA["None"]]></dmlExpression>
       </mapElement>
+      <mapElement elementHash="923486155" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/AS2Protocol/businessProtocolId/">
+         <dmlExpression><![CDATA["AS2_1"]]></dmlExpression>
+      </mapElement>
       <mapElement elementHash="410618956" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/URL/">
          <dmlExpression><![CDATA[%s_netAdressValue := "";
 %s_homeDir := "";
@@ -289,9 +292,6 @@ loop on in:\TPM\DocumentExchangeAddress[%i_Profiles]\ProtocolAttribute[ where it
 %s_netAdressValue :=replaceString(%s_netAdressValue, "TCP:","http://");
 %s_netAdressValue+%s_homeDir]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="923486155" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/AS2Protocol/businessProtocolId/">
-         <dmlExpression><![CDATA["AS2_1"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="1904531332" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/id/">
          <dmlExpression><![CDATA["ftp1"]]></dmlExpression>
       </mapElement>
@@ -304,20 +304,20 @@ loop on in:\TPM\DocumentExchangeAddress[%i_Profiles]\ProtocolAttribute[where ite
 };
 %s_ProtocolVal]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-217866395" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/Username/">
-         <dmlExpression><![CDATA["cyclone"]]></dmlExpression>
+      <mapElement elementHash="273387012" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/">
+         <dmlExpression><![CDATA[1 times]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1964949401" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/">
          <dmlExpression><![CDATA[1 times]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="273387012" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/">
-         <dmlExpression><![CDATA[1 times]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="342038841" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/sessionTimeOutSeconds/">
-         <dmlExpression><![CDATA["300"]]></dmlExpression>
+      <mapElement elementHash="-217866395" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/Username/">
+         <dmlExpression><![CDATA["cyclone"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1364787162" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/maxMessagesPerConnection/">
          <dmlExpression><![CDATA["1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="342038841" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/sessionTimeOutSeconds/">
+         <dmlExpression><![CDATA["300"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1447101368" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/">
          <dmlExpression><![CDATA[%i_REFLoop := 0;
@@ -339,16 +339,27 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1708959572" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/Contacts/Contact/PersonName/">
-         <dmlExpression><![CDATA["abhishek"]]></dmlExpression>
+         <dmlExpression><![CDATA[%test := "";
+%i_Certificate := null;
+loop on in:\TPM\DocumentExchangeAddress[%i_Profiles]\ProtocolAttribute[ where item\ProtocolAttributeTypeName\name = "PartnerId" ]
+{
+%test := this\value
+};
+
+loop on in:\TPM\Contacts[ where item\ProtocolID = %test ]
+{
+	%i_Certificate := this\ContactName
+};
+replaceIfNullOrAbsent ( %i_Certificate, "Dummy" )]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="107675574" elementPath="/InterchangePartnerProfile/xmlns/">
          <dmlExpression><![CDATA["http://www.axway.com/Schemas/2009/10/ipp"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-748987482" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/namespace/">
-         <dmlExpression><![CDATA["trading"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="836861394" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/enable102/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-748987482" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/namespace/">
+         <dmlExpression><![CDATA["trading"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-2012610237" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/OftpProtocol/businessProtocolId/">
          <dmlExpression><![CDATA["Oftp_2_0_2"]]></dmlExpression>
@@ -357,22 +368,33 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
          <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="2003106335" elementPath="/InterchangePartnerProfile/OrganizationProfile/Certificates/Certificate/friendlyName/">
-         <dmlExpression><![CDATA[in:\TPM\DocumentExchangeAddress[%i_Profiles]\name]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="-1396227515" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/AllowUploadOnDelExchange/">
-         <dmlExpression><![CDATA["false"]]></dmlExpression>
+         <dmlExpression><![CDATA[%test := "";
+%i_Certificate := null;
+loop on in:\TPM\DocumentExchangeAddress[%i_Profiles]\ProtocolAttribute[ where item\ProtocolAttributeTypeName\name = "PartnerId" ]
+{
+%test := this\value
+};
+
+loop on in:\TPM\Contacts[ where item\ProtocolID = %test ]
+{
+	%i_Certificate := this\CompanyName
+};
+replaceIfNullOrAbsent ( %i_Certificate, in:\TPM\DocumentExchangeAddress[%i_Profiles]\name )]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1486040078" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/MessageAttributesTemplate/DefaultMessageAttributesTemplate/">
          <dmlExpression><![CDATA[null]]></dmlExpression>
       </mapElement>
+      <mapElement elementHash="-1396227515" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/AllowUploadOnDelExchange/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
       <mapElement elementHash="-526703244" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/dataExchangeBuffer/">
          <dmlExpression><![CDATA["99999"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="998618688" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/MessageAttributesTemplate/">
-         <dmlExpression><![CDATA[null]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="-1974520836" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/RosettaNetProtocol/TransportRef/transportId/">
          <dmlExpression><![CDATA["HTTPTransport_1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="998618688" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/MessageAttributesTemplate/">
+         <dmlExpression><![CDATA[null]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="590304985" elementPath="/InterchangePartnerProfile/ipp/">
          <dmlExpression><![CDATA["http://www.axway.com/Schemas/2009/10/ipp"]]></dmlExpression>
@@ -387,23 +409,23 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
       <mapElement elementHash="851936383" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/friendlyName/">
          <dmlExpression><![CDATA[in:\TPM\DocumentExchangeAddress[%i_Profiles]\name]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="1940290985" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/OftpProtocol/standard/">
-         <dmlExpression><![CDATA["2.0"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="1653419396" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/isIntegration/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-410619700" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/DisabledReason/">
-         <dmlExpression><![CDATA["0"]]></dmlExpression>
+      <mapElement elementHash="1940290985" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/OftpProtocol/standard/">
+         <dmlExpression><![CDATA["2.0"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-347092121" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/MessageAttributesTemplate/">
          <dmlExpression><![CDATA[null]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-1683792512" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/RequestReceiptsFromPartners/SignedReceipts/sign/">
-         <dmlExpression><![CDATA["true"]]></dmlExpression>
+      <mapElement elementHash="-410619700" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/DisabledReason/">
+         <dmlExpression><![CDATA["0"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1151466702" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/MessageAttributesTemplate/IsMessageAttributesTemplateEnabledByProtocol/">
          <dmlExpression><![CDATA[null]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1683792512" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/RequestReceiptsFromPartners/SignedReceipts/sign/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-953328962" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/MessageAttributesTemplate/DefaultMessageAttributesTemplate/">
          <dmlExpression><![CDATA[null]]></dmlExpression>
@@ -429,10 +451,10 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
       <mapElement elementHash="1434387190" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/isIntegration/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="1309247698" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/RosettaNet2.0CollabRules/EncryptSignAlgorithms/sign/">
+      <mapElement elementHash="68041833" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/RequestReceiptsFromPartners/RecieptsSyncOrAsync/syncConnection/">
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="68041833" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/RequestReceiptsFromPartners/RecieptsSyncOrAsync/syncConnection/">
+      <mapElement elementHash="1309247698" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/RosettaNet2.0CollabRules/EncryptSignAlgorithms/sign/">
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-179886564" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/RequestReceiptsFromPartners/SignedReceipts/SigningAlgorithm/">
@@ -442,7 +464,18 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="785664108" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/Contacts/Contact/Email/">
-         <dmlExpression><![CDATA["akesharwani@axway.com"]]></dmlExpression>
+         <dmlExpression><![CDATA[%test := "";
+%i_Certificate := "";
+loop on in:\TPM\DocumentExchangeAddress[%i_Profiles]\ProtocolAttribute[ where item\ProtocolAttributeTypeName\name = "PartnerId" ]
+{
+%test := this\value
+};
+
+loop on in:\TPM\Contacts[ where item\ProtocolID = %test ]
+{
+	%i_Certificate := this\Email
+};
+replaceIfNullOrAbsent ( %i_Certificate, "dummy@xyz.com" )]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-2031291888" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/creditCounter/">
          <dmlExpression><![CDATA["999"]]></dmlExpression>
@@ -453,11 +486,11 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
       <mapElement elementHash="898182536" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/RequestReceiptsFromPartners/request/">
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-410301987" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/SequenceTimeout/">
-         <dmlExpression><![CDATA["60.0"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="1691612447" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/PasswordPolicy/">
          <dmlExpression><![CDATA["Default policy"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-410301987" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/SequenceTimeout/">
+         <dmlExpression><![CDATA["60.0"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="30399912" elementPath="/InterchangePartnerProfile/schemaLocation/">
          <dmlExpression><![CDATA["http://www.axway.com/Schemas/2009/10/ipp http://www.axway.com/Schemas/2009/10/InterchangePartnerConfig.xsd"]]></dmlExpression>
@@ -466,13 +499,10 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
          <dmlExpression><![CDATA["ISO-8859-1"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="2128409349" elementPath="/InterchangePartnerProfile/OrganizationProfile/CommunitySubscription/AuthorizedParty/">
-         <dmlExpression><![CDATA["Axway_Windows"]]></dmlExpression>
+         <dmlExpression><![CDATA["Schenker"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1106454421" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/readTimeoutSecs/">
          <dmlExpression><![CDATA["30.0"]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="-1095611666" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/EncryptSignAlgorithms/sign/">
-         <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1325671598" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/AS2Protocol/">
          <dmlExpression><![CDATA[%i_REFLoop := 0;
@@ -481,30 +511,45 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
 %i_REFLoop :=%i_REFLoop +1;
 %i_REFLoop times]]></dmlExpression>
       </mapElement>
+      <mapElement elementHash="-1095611666" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/EncryptSignAlgorithms/sign/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
+      </mapElement>
       <mapElement elementHash="1730003894" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/maxConnections/">
          <dmlExpression><![CDATA["100"]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="645430440" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/gsOnlyMode/">
-         <dmlExpression><![CDATA["false"]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="-870900112" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/Oftp_2_0_CollabRules/EncryptSignAlgorithms/sign/">
-         <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-487155771" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/RosettaNetProtocol/TransportRef/">
          <dmlExpression><![CDATA[null]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="701035516" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/isConsumer/">
+      <mapElement elementHash="-870900112" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/Oftp_2_0_CollabRules/EncryptSignAlgorithms/sign/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="645430440" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/gsOnlyMode/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-872369993" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/UseOverrideDirection/">
+      <mapElement elementHash="701035516" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/isConsumer/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1959720065" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/readTimeoutSecs/">
          <dmlExpression><![CDATA["30"]]></dmlExpression>
       </mapElement>
+      <mapElement elementHash="-872369993" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/UseOverrideDirection/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
       <mapElement elementHash="-1039210249" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/OrganizationName/">
          <dmlExpression><![CDATA[setDocumentAttribute ( "B2BXGISend_ProductionFilename", in:\TPM\DocumentExchangeAddress[%i_Profiles]\name + ".xml") ;
-in:\TPM\DocumentExchangeAddress[%i_Profiles]\name]]></dmlExpression>
+{#in:\TPM\DocumentExchangeAddress[%i_Profiles]\name#}
+%test := "";
+%i_Certificate := null;
+loop on in:\TPM\DocumentExchangeAddress[%i_Profiles]\ProtocolAttribute[ where item\ProtocolAttributeTypeName\name = "PartnerId" ]
+{
+%test := this\value
+};
+
+loop on in:\TPM\Contacts[ where item\ProtocolID = %test ]
+{
+	%i_Certificate := this\CompanyName
+};
+replaceIfNullOrAbsent ( %i_Certificate, in:\TPM\DocumentExchangeAddress[%i_Profiles]\name )]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1476544139" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/Oftp_2_0_CollabRules/MessageCompression/">
          <dmlExpression><![CDATA["None"]]></dmlExpression>
@@ -512,20 +557,20 @@ in:\TPM\DocumentExchangeAddress[%i_Profiles]\name]]></dmlExpression>
       <mapElement elementHash="-647826838" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/isIntegration/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-2132081086" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/type/">
-         <dmlExpression><![CDATA["Partner-Community"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="1205489383" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/Oftp_2_0_CollabRules/EncryptSignAlgorithms/encrypt/">
          <dmlExpression><![CDATA["true"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2132081086" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/type/">
+         <dmlExpression><![CDATA["Partner-Community"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="658831890" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/">
          <dmlExpression><![CDATA[1 times]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-1163756815" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/Contacts/Contact/Phone/">
-         <dmlExpression><![CDATA["1234567890"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="-1404214687" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/version/">
          <dmlExpression><![CDATA["2.0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1163756815" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/Contacts/Contact/Phone/">
+         <dmlExpression><![CDATA["Please update"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-995638466" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/LocalPort/">
          <dmlExpression><![CDATA["22"]]></dmlExpression>
@@ -536,11 +581,11 @@ in:\TPM\DocumentExchangeAddress[%i_Profiles]\name]]></dmlExpression>
       <mapElement elementHash="1297344670" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/namespace/">
          <dmlExpression><![CDATA["trading"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-1143470353" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/IsIntegration/">
-         <dmlExpression><![CDATA["false"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="746190186" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/MessageAttributesTemplate/DefaultMessageAttributesTemplate/">
          <dmlExpression><![CDATA[null]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1143470353" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/IsIntegration/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1517165992" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/MessageAttributesTemplate/IsMessageAttributesTemplatePrior/">
          <dmlExpression><![CDATA[null]]></dmlExpression>
@@ -585,11 +630,14 @@ loop on in:\TPM\entity[ where item\alias = %test ]
       <mapElement elementHash="273156144" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/id/">
          <dmlExpression><![CDATA["ftp1"]]></dmlExpression>
       </mapElement>
+      <mapElement elementHash="102840421" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/Oftp_2_0_CollabRules/SignedReceipts/SigningAlgorithm/">
+         <dmlExpression><![CDATA["SHA1"]]></dmlExpression>
+      </mapElement>
       <mapElement elementHash="-2145364732" elementPath="/InterchangePartnerProfile/OrganizationProfile/peer/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="102840421" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/Oftp_2_0_CollabRules/SignedReceipts/SigningAlgorithm/">
-         <dmlExpression><![CDATA["SHA1"]]></dmlExpression>
+      <mapElement elementHash="730345948" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/RequestReceiptsFromPartners/RecieptsSyncOrAsync/">
+         <dmlExpression><![CDATA[null]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-191452701" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/">
          <dmlExpression><![CDATA[%i_REFLoop := 0;
@@ -598,14 +646,22 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
 %i_REFLoop :=%i_REFLoop +1;
 %i_REFLoop times]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="730345948" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/RequestReceiptsFromPartners/RecieptsSyncOrAsync/">
-         <dmlExpression><![CDATA[null]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="310201161" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/EncryptSignAlgorithms/encrypt/">
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-595585135" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/partner/">
-         <dmlExpression><![CDATA[in:\TPM\DocumentExchangeAddress[%i_Profiles]\name]]></dmlExpression>
+         <dmlExpression><![CDATA[%test := "";
+%i_Certificate := null;
+loop on in:\TPM\DocumentExchangeAddress[%i_Profiles]\ProtocolAttribute[ where item\ProtocolAttributeTypeName\name = "PartnerId" ]
+{
+%test := this\value
+};
+
+loop on in:\TPM\Contacts[ where item\ProtocolID = %test ]
+{
+	%i_Certificate := this\CompanyName
+};
+replaceIfNullOrAbsent ( %i_Certificate, in:\TPM\DocumentExchangeAddress[%i_Profiles]\name )]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1208943774" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/enable102/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
@@ -613,14 +669,14 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
       <mapElement elementHash="-891132670" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/RosettaNet2.0CollabRules/SignSignals/SigningAlgorithm/">
          <dmlExpression><![CDATA["sha-256"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="1151087546" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/Oftp_2_0_CollabRules/EncryptSignAlgorithms/SigningAlgorithm/">
-         <dmlExpression><![CDATA["SHA1"]]></dmlExpression>
+      <mapElement elementHash="1095606629" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/enabled/">
+         <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-678552914" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/customTypeGateway/">
          <dmlExpression><![CDATA["0"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="1095606629" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/enabled/">
-         <dmlExpression><![CDATA["true"]]></dmlExpression>
+      <mapElement elementHash="1151087546" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/Oftp_2_0_CollabRules/EncryptSignAlgorithms/SigningAlgorithm/">
+         <dmlExpression><![CDATA["SHA1"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1230975636" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/isSequenced/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
@@ -634,26 +690,26 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
       <mapElement elementHash="1428069491" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/customTypeGateway/">
          <dmlExpression><![CDATA["0"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-361184408" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/RosettaNet2.0CollabRules/EncryptSignAlgorithms/EncryptionAlgorithm/">
-         <dmlExpression><![CDATA["DES-EDE3-CBC"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="-373782648" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/maxMessagesPerConnection/">
          <dmlExpression><![CDATA["1"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-1787655362" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/SequenceTimeout/">
-         <dmlExpression><![CDATA["60.0"]]></dmlExpression>
+      <mapElement elementHash="-361184408" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/RosettaNet2.0CollabRules/EncryptSignAlgorithms/EncryptionAlgorithm/">
+         <dmlExpression><![CDATA["DES-EDE3-CBC"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-453336647" elementPath="/InterchangePartnerProfile/OrganizationProfile/RoutingIds/">
          <dmlExpression><![CDATA[1 times]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="1403958911" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/PostalAddress/Street/">
-         <dmlExpression><![CDATA["NA"]]></dmlExpression>
+      <mapElement elementHash="-1787655362" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/SequenceTimeout/">
+         <dmlExpression><![CDATA["60.0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="869204308" elementPath="/InterchangePartnerProfile/ds/">
+         <dmlExpression><![CDATA["http://www.w3.org/2000/09/xmldsig#"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1067602749" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/InterchangeIdQualifier/">
          <dmlExpression><![CDATA["ZZ"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="869204308" elementPath="/InterchangePartnerProfile/ds/">
-         <dmlExpression><![CDATA["http://www.w3.org/2000/09/xmldsig#"]]></dmlExpression>
+      <mapElement elementHash="1403958911" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/PostalAddress/Street/">
+         <dmlExpression><![CDATA["NA"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-881242778" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/UseCommunityCollabSettings/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
@@ -667,9 +723,6 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
       <mapElement elementHash="195670645" elementPath="/InterchangePartnerProfile/attribute/">
          <dmlExpression><![CDATA["http://www.axway.com/Schemas/2012/attribute"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="1336686209" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/RosettaNet2.0CollabRules/base64Encoded/">
-         <dmlExpression><![CDATA["false"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="-94887342" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/">
          <dmlExpression><![CDATA[%i_REFLoop := 0;
 
@@ -677,35 +730,35 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
 %i_REFLoop :=%i_REFLoop +1;
 %i_REFLoop times]]></dmlExpression>
       </mapElement>
+      <mapElement elementHash="1336686209" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/RosettaNet2.0CollabRules/base64Encoded/">
+         <dmlExpression><![CDATA["false"]]></dmlExpression>
+      </mapElement>
       <mapElement elementHash="1540982176" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/PasswordPolicy/">
          <dmlExpression><![CDATA["Default policy"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1350923470" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/AS2CollabRules/asyncReceiptsFirstAS2transportDURL/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="1666950795" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/X12ApplicationId/">
-         <dmlExpression><![CDATA["PARTNERB"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="61423810" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/Oftp_2_0_CollabRules/SignedReceipts/sign/">
          <dmlExpression><![CDATA["true"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-2083045909" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/AttributeTemplate/Name/">
-         <dmlExpression><![CDATA["DefaultPartyAttributeTemplate"]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="-414649819" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/Password/">
-         <dmlExpression><![CDATA["mkUTyN42WynOf9kG6RA="]]></dmlExpression>
+      <mapElement elementHash="1666950795" elementPath="/InterchangePartnerProfile/OrganizationProfile/MessagingIdProfiles/X12/X12ApplicationId/">
+         <dmlExpression><![CDATA["PARTNERB"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1080790443" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/OftpTransport/useRFC2204/">
          <dmlExpression><![CDATA["false"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-661079005" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/PostalAddress/City/">
-         <dmlExpression><![CDATA["NA"]]></dmlExpression>
+      <mapElement elementHash="-414649819" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/Password/">
+         <dmlExpression><![CDATA["mkUTyN42WynOf9kG6RA="]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2083045909" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/AttributeTemplate/Name/">
+         <dmlExpression><![CDATA["DefaultPartyAttributeTemplate"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1539504588" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportUsers/User/type/">
          <dmlExpression><![CDATA["ftp"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="82530760" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/maxMessagesPerConnection/">
-         <dmlExpression><![CDATA["1"]]></dmlExpression>
+      <mapElement elementHash="-661079005" elementPath="/InterchangePartnerProfile/OrganizationProfile/AdministrativeInfo/PostalAddress/City/">
+         <dmlExpression><![CDATA["NA"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1991849824" elementPath="/InterchangePartnerProfile/OrganizationProfile/CollaborationRules/CollaborationRules/RosettaNet2.0CollabRules/">
          <dmlExpression><![CDATA[%i_REFLoop := 0;
@@ -714,6 +767,9 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
 %i_REFLoop :=%i_REFLoop +1;
 %i_REFLoop times]]></dmlExpression>
       </mapElement>
+      <mapElement elementHash="82530760" elementPath="/InterchangePartnerProfile/OrganizationProfile/Transports/HTTPTransport/maxMessagesPerConnection/">
+         <dmlExpression><![CDATA["1"]]></dmlExpression>
+      </mapElement>
       <mapElement elementHash="647204229" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/RosettaNetProtocol/">
          <dmlExpression><![CDATA[%i_REFLoop := 0;
 
@@ -721,11 +777,11 @@ if defined in:\TPM\DocumentExchangeAddress\ProtocolTypeId[%i_Profiles][ where it
 %i_REFLoop :=%i_REFLoop +1;
 %i_REFLoop times]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="890021894" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/type/">
-         <dmlExpression><![CDATA["EMBEDDED_SSH"]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="-199059677" elementPath="/InterchangePartnerProfile/OrganizationProfile/BusinessProtocols/AS2Protocol/TransportRef/transportId/">
          <dmlExpression><![CDATA["HTTPTransport_1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="890021894" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/type/">
+         <dmlExpression><![CDATA["EMBEDDED_SSH"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1990568811" elementPath="/InterchangePartnerProfile/OrganizationProfile/TransportServers/TransportServer/maxAuthentications/">
          <dmlExpression><![CDATA["3"]]></dmlExpression>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <businessDocument xmlns="http://www.axway.com/mappingServices/xmlBusinessDocument" id="a7a33bec-8ff3-4a7e-914b-5cf9023ab61d" keepDecimalSeparatorCharacter="true" keepDecimalSeparator="true" keepInputNumberFractionDigits="true" keepIntegerPlusSign="true" encodingBD="utf8" keepInputNumberDateDigits="true" keepPlusSign="true">
-   <signature appVersion="3.1.2" lastUpdatedOn="29/10/2018 13:25:09 +0530"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="31/10/2018 15:52:26 +0530"/>
    <childElements>
       <childElement factoryType="XmlProlog" order="1" name="Prolog" label="Prolog xml" hash="-964629216">
          <cardinality minimum="1" maximum="1"/>
@@ -2179,6 +2179,32 @@
                         </childElement>
                         <childElement factoryType="XmlLeaf" hash="-1351144806" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="-1" allowDistortion="true" nullable="true" keepDecimalSeparator="true" defaultValue="passport" order="503" encodingElement="utf8" name="owner">
                            <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="XmlParent" order="504" name="Contacts" xmlNamespace="111" hash="1675308580" namespaceByDefault="true">
+                     <cardinality/>
+                     <childElements>
+                        <childElement factoryType="XmlLeaf" namespaceByDefault="true" hash="-1769810075" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="111" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="505" encodingElement="utf8" name="CompanyName">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="XmlLeaf" namespaceByDefault="true" hash="-1371392394" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="111" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="506" encodingElement="utf8" name="Protocol">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="XmlLeaf" namespaceByDefault="true" hash="155224324" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="111" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="507" encodingElement="utf8" name="ProtocolID">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="XmlLeaf" namespaceByDefault="true" hash="-1898158415" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="111" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="508" encodingElement="utf8" name="ContactName">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="XmlLeaf" namespaceByDefault="true" hash="2041844153" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="111" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="509" encodingElement="utf8" name="Name">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="XmlLeaf" namespaceByDefault="true" hash="-479841543" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="111" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="510" encodingElement="utf8" name="Email">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="XmlLeaf" namespaceByDefault="true" hash="-1966434535" typeId="10" definition="0,255" paddingCharElement=" " xmlNamespace="111" allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="511" encodingElement="utf8" name="Role">
+                           <cardinality minimum="1" maximum="1"/>
                         </childElement>
                      </childElements>
                   </childElement>

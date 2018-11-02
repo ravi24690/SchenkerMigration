@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://www.axway.com/mappingServices/project" createdBy="akesharwani" lastModifiedBy="akesharwani" checksumTest="true" creationDate="16/08/2018 18:44:49 +0530" engineType="DML" lastModifiedDate="30/10/2018 12:22:27 +0530" engineVersion="2.1">
+<project xmlns="http://www.axway.com/mappingServices/project" createdBy="akesharwani" lastModifiedBy="akesharwani" checksumTest="true" creationDate="16/08/2018 18:44:49 +0530" engineType="DML" lastModifiedDate="02/11/2018 12:21:04 +0530" engineVersion="2.1">
    <deploymentInformation>
       <deployment name="SchenkerMigration_PassportToB2Bi" id="2d9ebe4d-d0d7-429e-b5cd-40806a2eace3" port="6080" date="26/10/2018 15:59:08 +0530" user="akesharwani (admin)" projectType="DML-2.1" version="1" from="ITEM-S32255" host="10.151.14.55">
          <content>
@@ -146,5 +146,53 @@
             <mapping>Mapping Flows/PassportToB2Bi.dmlflw</mapping>
          </content>
       </deployment>
+      <deployment name="SchenkerMigration_PassportToB2Bi" id="628c8183-ea01-440a-b84e-8cb4a97d2b32" port="6080" date="31/10/2018 16:35:00 +0530" user="akesharwani" projectType="DML-2.1" version="30" from="ITEM-S32255" host="localhost">
+         <content>
+            <mapping>Mapping Flows/PassportToB2Bi.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="SchenkerMigration_PassportToB2Bi" id="9968e4aa-a092-429f-aad0-725866442b01" port="6080" date="31/10/2018 18:04:42 +0530" user="akesharwani" projectType="DML-2.1" version="31" from="ITEM-S32255" host="localhost">
+         <content>
+            <mapping>Mapping Flows/PassportToB2Bi.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="SchenkerMigration_PassportToB2Bi" id="d3a5b5ee-2352-458b-952a-83503c79b44d" port="6080" date="01/11/2018 16:24:44 +0530" user="akesharwani" projectType="DML-2.1" version="32" from="ITEM-S32255" host="localhost">
+         <content>
+            <mapping>Mapping Flows/PassportToB2Bi.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="SchenkerMigration_PassportToB2Bi" id="10a2f62e-0eef-494e-86cc-f7784e7626fc" port="6080" date="02/11/2018 11:33:05 +0530" user="akesharwani" projectType="DML-2.1" version="33" from="ITEM-S32255" host="localhost">
+         <content>
+            <mapping>Mapping Flows/PassportToB2Bi.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="SchenkerMigration_PassportToB2Bi" id="2a067760-39ac-4e57-b865-b201fd43891a" port="6080" date="02/11/2018 11:39:54 +0530" user="akesharwani" projectType="DML-2.1" version="34" from="ITEM-S32255" host="localhost">
+         <content>
+            <mapping>Mapping Flows/PassportToB2Bi.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="SchenkerMigration_PassportToB2Bi" id="64a65097-9bd9-438c-ad0a-bd3f438be04c" port="6080" date="02/11/2018 11:49:59 +0530" user="akesharwani" projectType="DML-2.1" version="35" from="ITEM-S32255" host="localhost">
+         <content>
+            <mapping>Mapping Flows/PassportToB2Bi.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="SchenkerMigration_PassportToB2Bi" id="cc9834d4-5add-4bcb-8810-9298bfc7cf9b" port="6080" date="02/11/2018 12:05:39 +0530" user="akesharwani" projectType="DML-2.1" version="36" from="ITEM-S32255" host="localhost">
+         <content>
+            <mapping>Mapping Flows/PassportToB2Bi.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="SchenkerMigration_PassportToB2Bi" id="f8cd62a9-2aef-48c5-86c1-f958fd7fc6f6" port="6080" date="02/11/2018 12:07:15 +0530" user="akesharwani" projectType="DML-2.1" version="37" from="ITEM-S32255" host="localhost">
+         <content>
+            <mapping>Mapping Flows/PassportToB2Bi.dmlflw</mapping>
+         </content>
+      </deployment>
+      <deployment name="SchenkerMigration_PassportToB2Bi" id="54a97626-e7d4-4023-91b9-46f17614b24e" port="6080" date="02/11/2018 12:21:04 +0530" user="akesharwani" projectType="DML-2.1" version="38" from="ITEM-S32255" host="localhost">
+         <content>
+            <mapping>Mapping Flows/PassportToB2Bi.dmlflw</mapping>
+         </content>
+      </deployment>
    </deploymentInformation>
+   <mappingInformations>
+      <mappingInformation state="Inactive" path="Mapping Flows/CSV2XML_ContactList.dmlflw"/>
+   </mappingInformations>
 </project>
